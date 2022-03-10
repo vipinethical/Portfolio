@@ -1,0 +1,117 @@
+@import "../variables.scss";
+
+/* ///////////////////////////// CONTACT STARTS  ////////////////////////////////// */
+
+.mi-contact {
+  &-info {
+    margin-top: -30px;
+  }
+
+  &-infoblock {
+    margin-top: 30px;
+    background: rgba(lighten($color-bg-body, 5), 1);
+    padding: 30px;
+    display: flex;
+
+    &-icon {
+      display: inline-block;
+      height: 70px;
+      width: 70px;
+      flex: 0 0 70px;
+      max-width: 70px;
+      // border: 1px solid $color-border;
+      text-align: center;
+      line-height: 66px;
+      margin-right: 20px;
+
+      svg {
+        height: 30px;
+        width: 30px;
+      }
+    }
+
+    &-content {
+      h6 {
+        margin-top: -5px;
+      }
+
+      p {
+        margin-bottom: 0;
+
+        a {
+          color: $color-body;
+          transition: $transition;
+
+          &:hover {
+            color: $color-theme;
+          }
+        }
+      }
+    }
+  }
+
+  @media #{$layout-tablet} {
+    &-info {
+      margin-top: 50px;
+    }
+  }
+
+  @media #{$layout-mobile-lg} {
+    &-info {
+      margin-top: 50px;
+    }
+  }
+
+  @media #{$layout-mobile-sm} {
+    &-infoblock {
+      padding: 20px;
+      flex-wrap: wrap;
+
+      &-icon {
+        height: 55px;
+        width: 55px;
+        flex: 0 0 55px;
+        max-width: 55px;
+        line-height: 51px;
+      }
+
+      &-content {
+        margin-top: 20px;
+        flex: 0 0 100%;
+      }
+    }
+  }
+}
+
+/* ///////////////////////////// CONTACT ENDS  ////////////////////////////////// */
+
+/* ///////////////////////////// FORM ENDS  ////////////////////////////////// */
+
+.mi-form {
+  &-field {
+    margin-top: 30px;
+    position: relative;
+
+    label {
+      position: absolute;
+      left: 15px;
+      top: -13px;
+      background: #121212;
+      // background: $color-bg-body;
+      transition: $transition;
+      pointer-events: none;
+      padding: 0 10px;
+      font-size: 0.94rem;
+    }
+
+    input,
+    textarea {
+      border: 1px solid #1f1f1f;
+      // border: 1px solid $color-border;
+      font-size: 1rem;
+      padding: 12px 15px;
+    }
+  }
+}
+
+/* ///////////////////////////// CONTACT ENDS  ////////////////////////////////// */

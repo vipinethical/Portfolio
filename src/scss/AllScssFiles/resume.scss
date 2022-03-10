@@ -1,0 +1,147 @@
+@import "../variables.scss";
+
+/* ///////////////////////////// RESUME STARTS  ////////////////////////////////// */
+
+/*
+ * Progress Bar Starts
+ */
+
+.mi-progress {
+  &-title {
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+  &-inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &-percentage {
+    flex: 0 0 60px;
+  }
+
+  &-container {
+    background: #1f1f1f;
+    // background: $color-border;
+    display: block;
+    height: 6px;
+    width: 100%;
+    position: relative;
+  }
+
+  &-active {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: $color-theme;
+    width: 0;
+    transition: all 1s cubic-bezier(0.01, 0.57, 0.68, 1.05) 0.4s;
+  }
+}
+/*
+ * Progress Bar End
+ */
+
+//////////////////////////////////////////////////////////////////////////////////
+
+.mi-resume {
+  &-wrapper {
+    // border-left: 3px solid $color-border;
+    border-left: 3px solid #1f1f1f;
+  }
+
+  & {
+    display: flex;
+  }
+
+  &-summary {
+    align-self: flex-start;
+    flex: 0 0 220px;
+    max-width: 220px;
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -9px;
+      top: 6px;
+      height: 15px;
+      width: 15px;
+      border-radius: 100px;
+      background: #121212;
+      // border: 3px solid $color-border;
+      border: 3px solid #1f1f1f;
+    }
+  }
+
+  &-year {
+    color: $color-body;
+    margin-bottom: 0;
+  }
+
+  &-company {
+    color: #ffffff;
+    margin-top: 8px;
+  }
+
+  &-details {
+    position: relative;
+    padding-left: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      // top: 15px;
+      height: 1px;
+      width: 30px;
+      // background: $color-border;
+      background: #1f1f1f;
+    }
+
+    h5 {
+      color: $color-theme;
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  @media #{$layout-notebook} {
+    &-summary {
+      flex: 0 0 170px;
+      max-width: 170px;
+    }
+  }
+
+  @media #{$layout-tablet} {
+    &-summary {
+      flex: 0 0 170px;
+      max-width: 170px;
+    }
+  }
+
+  @media #{$layout-mobile-lg} {
+    flex-wrap: wrap;
+
+    &-details {
+      padding-left: 20px;
+      margin: 4px 0px;
+
+      &::before {
+        left: 3px;
+        top: -15px;
+        width: 12px;
+      }
+    }
+  }
+}
+
+/* ///////////////////////////// RESUME ENDS  ////////////////////////////////// */

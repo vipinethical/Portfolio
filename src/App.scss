@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,400,400i,500,500i,600,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800&display=swap");
+
+@import "./scss/variables.scss";
+
+//////////////////////////////////////////////////
+
+@import "./scss/AllScssFiles/header.scss";
+@import "./scss/AllScssFiles/navigationBar.scss";
+@import "./scss/AllScssFiles/home.scss";
+@import "./scss/AllScssFiles/socialIcons.scss";
+@import "./scss/AllScssFiles/about.scss";
+@import "./scss/AllScssFiles/title.scss";
+@import "./scss/AllScssFiles/button.scss";
+@import "./scss/AllScssFiles/contact.scss";
+@import "./scss/AllScssFiles/portfolio.scss";
+@import "./scss/AllScssFiles/modal.scss";
+@import "./scss/AllScssFiles/resume.scss";
+
+//////////////////////////////////////////////////
+
+html {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+body {
+  overflow: hidden !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+  line-height: 1.8rem;
+  font-family: Nunito, sans-serif;
+  color: #a4acc4;
+  font-weight: 400;
+  // background: #10121b;
+  background: #121212;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+/* Page Loader starts*/
+
+/* Page Loader ends*/
+
+/* ////////////////////////////////////////////////////////////////// */
+
+.mainGradientBgColor {
+  background: linear-gradient(to right, #ffbf71, #ff666f);
+}
+.newNavBarColor {
+  background: #ff3b4c;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+
+button,
+input,
+select,
+textarea {
+  background: transparent;
+  border: 1px solid #2e344e;
+  font-family: Nunito, sans-serif;
+  color: #a4acc4;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+button:active,
+button:focus,
+input:active,
+input:focus,
+select:active,
+select:focus,
+textarea:active,
+textarea:focus {
+  outline: none;
+  border-color: #037fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+select {
+  height: 50px;
+  padding: 0 15px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+
+/* ////////////////////////  FONT FAMILY STARTS   //////////////////////////////////////// */
+
+/* thin 100
+thin 100 Italic
+light 300
+light 300 Italic
+regular 400
+regular 400 Italic
+medium 500
+medium 500 Italic
+bold 700
+bold 700 Italic
+ */
+
+.fontFamilyRoboto {
+  font-family: Roboto, sans-serif;
+}
+.fontFamilyNunito {
+  font-family: Nunito, sans-serif;
+}
+
+/* ////////////////////////  FONT FAMILY ENDS   //////////////////////////////////////// */
+
+/* ///////////////////////////// MAIN WRAPPER STARTS  ////////////////////////////////// */
+
+.mWrapper {
+  padding-left: 300px;
+  position: relative;
+  min-height: 100vh;
+  z-index: 1;
+
+  @media #{$layout-laptop} {
+    padding-left: 260px;
+  }
+
+  @media #{$layout-notebook} {
+    padding-left: 0;
+  }
+
+  @media #{$layout-tablet} {
+    padding-left: 0;
+  }
+
+  @media #{$layout-mobile-lg} {
+    padding-left: 0;
+  }
+}
+
+/* ///////////////////////////// MAIN WRAPPER ENDS  ////////////////////////////////// */
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* ///////////////////////////// EXTRA SCSS STARTS  ////////////////////////////////// */
+
+.white-border {
+  border: 1px solid white;
+}
+.green-border {
+  border: 1px solid green;
+}
+.yellow-border {
+  border: 1px solid yellow;
+}
+
+.justify-content-center {
+  justify-content: center !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Nunito, sans-serif;
+  color: #fff;
+}
+
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.color-theme {
+  color: $color-theme;
+}
+
+.mt-30-reverse {
+  margin-top: -30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-50-reverse {
+  margin-top: -50px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mi-padding-top {
+  padding-top: 120px;
+
+  @media #{$layout-tablet} {
+    padding-top: 100px;
+  }
+
+  @media #{$layout-mobile-lg} {
+    padding-top: 80px;
+  }
+}
+
+.mi-padding-bottom {
+  padding-bottom: 120px;
+
+  @media #{$layout-tablet} {
+    padding-bottom: 100px;
+  }
+
+  @media #{$layout-mobile-lg} {
+    padding-bottom: 80px;
+  }
+}
+
+.mi-section {
+  position: relative;
+}
+
+/* ///////////////////////////// EXTRA SCSS ENDS  ////////////////////////////////// */
