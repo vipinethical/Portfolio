@@ -22,7 +22,6 @@ import resumePdf from "../images/file/Vipinn_resume.pdf";
 export {
   profileIcon,
   AboutImage,
-  // portfolio images
   portfolio_1,
   portfolio_cms,
   portfolio_lms,
