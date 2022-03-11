@@ -191,7 +191,7 @@ const Contact = (props) => {
                   <div className="mi-contact-infoblock-content">
                     <h6>Email</h6>
                     <p>
-                      <a href="mailto:sharmas2197@gmail.com">
+                      <a href="mailto:Kvipin279@gmail.com">
                         Kvipin279@gmail.com
                       </a>
                     </p>
