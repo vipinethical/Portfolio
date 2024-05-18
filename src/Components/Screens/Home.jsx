@@ -4,15 +4,15 @@ import Bubbles from "../../Elements/Bubbles";
 const Home = (props) => {
   const socialLinks = [
     {
-      href: "https://facebook.com",
-      icon: "lni-facebook",
+      href: "https://www.linkedin.com/in/vipin-chaudhary-b94b421b0/",
+      icon: "lni-linkedin",
     },
+    // {
+    //   href: "https://twitter.com",
+    //   icon: "lni-twitter ",
+    // },
     {
-      href: "https://twitter.com",
-      icon: "lni-twitter ",
-    },
-    {
-      href: "https://github.com/",
+      href: "https://github.com/vipinethical",
       icon: "lni-github",
     },
   ];
