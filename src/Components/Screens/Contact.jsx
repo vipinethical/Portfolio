@@ -167,7 +167,7 @@ const Contact = (props) => {
                   <div className="mi-contact-infoblock-content">
                     <h6>Phone</h6>
                     <p>
-                      <a href="tel:+918826-762-838">+917982-476-952</a>
+                      <a href="tel:+918826-762-838">+918826-939-967</a>
                     </p>
                   </div>
                 </div>

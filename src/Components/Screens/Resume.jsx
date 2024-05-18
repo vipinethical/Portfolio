@@ -13,7 +13,7 @@ const Resume = (props) => {
     setCssWidth(85);
     setJavaScriptWidth(85);
     setJQueryWidth(75);
-    setReactWidth(80);
+    setReactWidth(95);
     setAngularWidth(75);
 
     return () => {
@@ -114,7 +114,7 @@ const Resume = (props) => {
               </div>
               <div className="col-lg-6 mt-30">
                 <div className="mi-progress">
-                  <h6 className="mi-progress-title">jQuery</h6>
+                  <h6 className="mi-progress-title">Redux</h6>
                   <div className="mi-progress-inner">
                     <div className="mi-progress-percentage">{jQueryWidth}%</div>
                     <div className="mi-progress-container">
@@ -155,6 +155,61 @@ const Resume = (props) => {
 
           <div className="mi-resume-wrapper">
             {/* .................................................. */}
+            <div className="mi-resume mt-30">
+              <div className="mi-resume-summary">
+                <h6 className="mi-resume-year">September 2023 - present</h6>
+              </div>
+              <div className="mi-resume-details">
+                <h5>Software Developer(Frontend)</h5>
+                <h6 className="mi-resume-company">Freelacing</h6>
+                <p>
+                  • Developed scalable and dynamic web applications and websites{" "}
+                  <br />• Worked collaboratively with clients to understand
+                  their requirements and deliver high-quality results.
+                  <br /> • Developed landing pages, dashboards, admin panels and
+                  online applications using React JS and Javascript.
+                  <br />• Revamped Webapps according to client requirement
+                </p>
+              </div>
+            </div>
+            <div className="mi-resume mt-30">
+              <div className="mi-resume-summary">
+                <h6 className="mi-resume-year">September 2022 - August 2023</h6>
+              </div>
+              <div className="mi-resume-details">
+                <h5>Software Developer</h5>
+                <h6 className="mi-resume-company">
+                  Antino Labs, Gurugram(Haryana)
+                </h6>
+                <p>
+                  • Worked as a front-end developer at Antino Labs, developing
+                  software solutions that contributed to the continuous
+                  improvement of the development process
+                  <br />• Worked collaboratively with clients to understand
+                  their requirements and deliver high-quality results.
+                  <br /> • Developed scalable and dynamic web applications ,
+                  dashboards, admin panels and online applications using React
+                  JS and Javascript .
+                  <br />• Fixed Bugs in Existing Project
+                </p>
+              </div>
+            </div>
+            <div className="mi-resume mt-30">
+              <div className="mi-resume-summary">
+                <h6 className="mi-resume-year">May 2022 - August 2022</h6>
+              </div>
+              <div className="mi-resume-details">
+                <h5>React Developer</h5>
+                <h6 className="mi-resume-company">Begig, Gurugram(Haryana)</h6>
+                <p>
+                  • Deepened understanding of HTML, CSS, and Javascript for
+                  clean and organized code
+                  <br /> • Created responsive UI using Ant Design.
+                  <br /> • Integrated APIs for data fetching and display
+                  <br />• Fixed Bugs in Existing Project
+                </p>
+              </div>
+            </div>
             <div className="mi-resume mt-30">
               <div className="mi-resume-summary">
                 <h6 className="mi-resume-year">June 2021 - August 2021</h6>
@@ -199,7 +254,7 @@ const Resume = (props) => {
                 <h6 className="mi-resume-company">
                   Manav Rachna University, Haryana
                 </h6>
-                <p>Ongoing 75% aggregate till 7th sem</p>
+                <p>Passed with 75% aggregate</p>
               </div>
             </div>
             {/* .................................................. */}
@@ -232,7 +287,10 @@ const Resume = (props) => {
                 <h6 className="mi-resume-company">
                   Lt. Atul Katarya Memorial School, Gurugram (I.C.S.E)
                 </h6>
-                <p>Passed with 76% in science stream.</p>
+                <p>
+                  Passed the Indian Certificate of Secondary Education
+                  (I.C.S.E.) Board examinations with a score of 76%.
+                </p>
               </div>
             </div>
             {/* .................................................. */}

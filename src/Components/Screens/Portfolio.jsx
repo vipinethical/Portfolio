@@ -25,36 +25,39 @@ const Portfolio = (props) => {
     //   href: "https://www.iaugmentor.com/",
     // },
     {
-      title: "React Admin Panel",
-      subtitle: "Platform consits of multiple systems like LMS, CMS etc",
+      title: "Eggoz Farm and Executive App",
+      subtitle:
+        "Collaborated with designers to create a comprehensive dashboard and portal for Farmer and Excecutive Web App.",
       src: portfolio_admin_panel,
       src_full: portfolio_admin_panel,
-      href: "",
+      href: "https://farm.eggoz.in/auth/login",
     },
     {
-      title: "Web-App",
+      title: "Mamastops",
       subtitle:
-        "Platform where clients can practice applying new skills and knowledge",
+        " Mamastops a pioneering one-step solution for the largest logistics industry. It uses the supply chain network for hassle-free transport services",
       src: portfolio_webapp,
       src_full: portfolio_webapp,
       // href: "https://app.iaugmentor.com/login",
-      href: "",
+      href: "https://customer.mamastops.com/auth/login/",
     },
     {
-      title: "Learning Management System",
-      subtitle: "LMS can deliver reports detailing how learners performed",
+      title: "ObenEV",
+      subtitle:
+        "Developed Webapp for  Obenev while working at Antino labs which is fully resposnive and has interactive animations.",
       src: portfolio_lms,
       src_full: portfolio_lms_full,
       // href: "https://learning.iaugmentor.com/login",
-      href: "",
+      href: "https://obenelectric.com/",
     },
     {
-      title: "Content Management System",
-      subtitle: "Admin panel which is used for content CRUD ",
+      title: "Begig",
+      subtitle:
+        "A platform that allows businesses to find and hire talented freelancers for their various projects.",
       src: portfolio_cms,
       src_full: portfolio_cms,
       // href: "https://cms.iaugmentor.com/login",
-      href: "",
+      href: "https://www.begig.io/",
     },
   ];
 
@@ -171,17 +174,14 @@ const Portfolio = (props) => {
       {/* ///////////////////////////////////////////////////////////////////////// */}
 
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
-        <div className="container">
+        {/* <div className="container">
           <div className="mi-sectiontitle">
             <h2>Website</h2>
             <span>Website</span>
           </div>
-          {/* ////////////////////////////////////////////////// */}
 
           <div className="row mt-30">
-            {/* left box starts */}
             <div className="col-md-4">
-              {/* ............................... */}
               <h5 className="mi-portfolio-websitecard-title">Pricing Page</h5>
               <div className="mi-portfolio-website-card">
                 <a
@@ -192,13 +192,9 @@ const Portfolio = (props) => {
                   <img alt="pricing_website" src={pricing_website} />
                 </a>
               </div>
-              {/* ............................... */}
             </div>
-            {/* left box ends */}
 
-            {/* center box starts */}
             <div className="col-md-4">
-              {/* ............................... */}
               <h5 className="mi-portfolio-websitecard-title">
                 iAugmentor Labs. Website
               </h5>
@@ -212,21 +208,13 @@ const Portfolio = (props) => {
                   <img alt="pricing_website" src={portfolio_website_full} />
                 </a>
               </div>
-              {/* ............................... */}
             </div>
-            {/* center box ends */}
 
-            {/* right box starts */}
             <div className="col-md-4"></div>
-            {/* right box ends */}
           </div>
-
-          {/* ////////////////////////////////////////////////// */}
-        </div>
+        </div> */}
       </div>
-      {/* ///////////////////////////////////////////////////////////////////////// */}
 
-      {/* modal for image zoom */}
       <div
         className="mi-modal-container mi-modal-full-dimension mi-modal-fade-in-strong"
         style={{ display: showModal === false ? "none" : "block" }}

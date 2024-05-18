@@ -27,7 +27,7 @@ const App = () => {
     <BrowserRouter>
       <Switch>
         <PrivateRoute exact path="/contact" component={Contact} />
-        <PrivateRoute exact path="/portfolio" component={Portfolio} />
+        <PrivateRoute exact path="/projects" component={Portfolio} />
         <PrivateRoute exact path="/resume" component={Resume} />
         <PrivateRoute exact path="/about" component={About} />
         <PrivateRoute exact path="/" component={Home} />

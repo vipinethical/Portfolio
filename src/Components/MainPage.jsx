@@ -20,10 +20,10 @@ const MainPage = (props) => {
       href: "/resume",
       title: "Resume",
     },
-    // {
-    //   href: "/portfolio",
-    //   title: "Portfolios",
-    // },
+    {
+      href: "/projects",
+      title: "Projects",
+    },
     {
       href: "/contact",
       title: "Contact",
@@ -70,7 +70,7 @@ const MainPage = (props) => {
           {/* //////////////////////////////////////////////////// */}
           <div className="mHeader-image">
             <a href="/">
-              <img src={profileIcon} alt="anand joshi" />
+              <img src={profileIcon} alt="vipin kumar" />
             </a>
           </div>
           {/* //////////////////////////////////////////////////// */}
